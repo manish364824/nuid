@@ -13,7 +13,7 @@ matrix:
     - go: tip
   exclude:
     - arch: ppc64le
-	go: 1.4
+      go: 1.4
 
 install:
 - go get -t ./...
