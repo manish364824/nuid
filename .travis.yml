@@ -8,6 +8,13 @@ go:
 - 1.9.x
 - 1.10.x
 
+matrix:
+  allow_failures:
+    - go: tip
+  exclude:
+    - arch: ppc64le
+	  go: 1.4
+
 install:
 - go get -t ./...
 - go get github.com/mattn/goveralls
